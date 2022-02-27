@@ -1,0 +1,29 @@
+@import '../../style/shared.scss';
+
+.footer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.33;
+  color: $text-current;
+  width: 247px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.list {
+  display: flex;
+}
+.item {
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}

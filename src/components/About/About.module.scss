@@ -1,0 +1,65 @@
+@import '../../style/shared.scss';
+.about {
+  max-width: 440px;
+  margin-top: 130px;
+}
+.about_box {
+  display: flex;
+  justify-content: space-between;
+}
+.about_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $link-color;
+}
+.about_name {
+  color: $text-current;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.about_button {
+  margin-top: 50px;
+  background: $button_color;
+  border: 1px solid $button_color;
+  border-radius: 100px;
+  cursor: pointer;
+  color: $white-color;
+  padding: 14px 48px 14px 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33;
+  width: 200px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid black;
+    background-color: $white-color;
+    color: $text;
+  }
+}
+.background {
+  //     background: rgb(90,248,153);
+  // background: radial-gradient(circle, rgba(90,248,153,0.7) 0%, rgba(255,223,108,0.01) 100%);
+  background: linear-gradient(
+    rgba(255, 223, 108, 1),
+    rgba(90, 248, 153, 0.7),
+    rgba(255, 130, 205, 1),
+    rgba(172, 106, 255, 1)
+  );
+  transform: rotate(134.4deg);
+  filter: blur(250px);
+  background-repeat: no-repeat;
+  width: 550px;
+  height: 550px;
+  display: flex;
+  opacity: 0.7;
+  margin-top: 52px;
+}
